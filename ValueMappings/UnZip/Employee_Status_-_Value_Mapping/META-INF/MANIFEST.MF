@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: Employee_Status_-_Value_Mapping; singleton:=true
+Bundle-ManifestVersion: 2
+Origin-Bundle-SymbolicName: Employee_Status_-_Value_Mapping
+Origin-Bundle-Version: 1.0.2
+Import-Package: com.sap.xi.mapping.camel.valmap
+Origin-Bundle-Name: Employee Status
+Bundle-Name: Employee Status
+Bundle-Version: 1.0.2
+Bundle-Activator: com.sap.xi.mapping.camel.valmap.ValueMappingActivato
+ r
+SAP-NodeType: IFLMAP
+Origin-ModifiedDate: 1692539246136
+SAP-BundleType: ValueMapping
+Import-Service: 
+

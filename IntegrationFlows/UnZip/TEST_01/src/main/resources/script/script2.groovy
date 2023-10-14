@@ -9,7 +9,7 @@ def Message processData(Message message) {
     def body = message.getBody(java.lang.String)
     def messageLog = messageLogFactory.getMessageLog(message)
     if (messageLog != null) {
-        messageLog.addAttachmentAsString('My Attachment-2.0', body, 'text/plain')
+        messageLog.addAttachmentAsString('My Attachment-updated', body, 'text/plain')
     }
     return message
 }

@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="EmpJob">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="EmpJob" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="contractDate" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString8Nav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PicklistOption" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="externalCode" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="customString35" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString31" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="GA_endDate" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="GA_startDate" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="GA_plannedEndDate" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+								<xs:element name="customString100" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="userId" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							
+							<xs:element name="startDate" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="endDate" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="eventReason" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="seqNumber" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="uniquekey" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="cudKey" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+								<xs:element name="lastModifiedDateTime" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="eventNav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PicklistOption" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="externalCode" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="customLong1Nav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PicklistOption" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="externalCode" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="employmentNav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="EmpEmployment" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="customString1" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="assignmentClass" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="personIdExternal" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="customString6Nav" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PicklistOption" minOccurs="0" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="externalCode" minOccurs="0">
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:minLength value="0"/>
+																						<xs:maxLength value="128"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="empGlobalAssignmentNav" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="EmpGlobalAssignment" minOccurs="0" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="endDate" minOccurs="0">
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:minLength value="0"/>
+																						<xs:maxLength value="128"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="plannedEndDate" minOccurs="0">
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:minLength value="0"/>
+																						<xs:maxLength value="128"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="startDate" minOccurs="0">
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:minLength value="0"/>
+																						<xs:maxLength value="128"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																			<xs:element name="customString101" minOccurs="0">
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:minLength value="0"/>
+																						<xs:maxLength value="128"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="company" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="contractEndDate" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="costCenter" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString29" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="emplStatusNav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PicklistOption" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="externalCode" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="customString13" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString27" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString27Nav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PicklistOption" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="externalCode" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="customString10Nav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PicklistOption" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="externalCode" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="customString34" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString25" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="department" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="jobCode" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString2" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString15" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString15Nav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PicklistOption" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="externalCode" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="customDate1" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString102Nav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="FOJobFunction" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="cust_jobGroupNav" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="cust_JobGroup" minOccurs="0" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="externalCode" minOccurs="0">
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:minLength value="0"/>
+																						<xs:maxLength value="128"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="customString102" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString16" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="location" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="managerId" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString28Nav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PicklistOption" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="externalCode" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="payGrade" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="payScaleArea" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="payScaleGroup" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="payScaleLevel" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="payScaleType" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString12" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString6Nav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PicklistOption" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="mdfExternalCode" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="externalCode" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="customString11Nav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PicklistOption" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="externalCode" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="customString14" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString17" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString24" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="position" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="positionEntryDate" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="timezone" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString20" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="customString33Nav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PicklistOption" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="externalCode" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:minLength value="0"/>
+																<xs:maxLength value="128"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="expectedReturnDate" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="128"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="locationNav" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="FOLocation" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="addressNavDEFLT" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="FOCorporateAddressDEFLT" minOccurs="0" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="country" minOccurs="0">
+																				<xs:simpleType>
+																					<xs:restriction base="xs:string">
+																						<xs:minLength value="0"/>
+																						<xs:maxLength value="128"/>
+																					</xs:restriction>
+																				</xs:simpleType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

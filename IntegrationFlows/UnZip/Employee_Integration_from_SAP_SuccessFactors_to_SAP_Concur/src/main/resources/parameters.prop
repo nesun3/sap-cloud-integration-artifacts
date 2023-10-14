@@ -1,0 +1,27 @@
+#Sat Oct 14 11:21:21 UTC 2023
+Sender_Scheduler=<row><cell>dayValue</cell><cell></cell></row><row><cell>monthValue</cell><cell></cell></row><row><cell>yearValue</cell><cell></cell></row><row><cell>dateType</cell><cell>DAILY</cell></row><row><cell>secondValue</cell><cell>0</cell></row><row><cell>minutesValue</cell><cell></cell></row><row><cell>hourValue</cell><cell></cell></row><row><cell>toInterval</cell><cell>24</cell></row><row><cell>fromInterval</cell><cell>0</cell></row><row><cell>OnEveryMinute</cell><cell>1</cell></row><row><cell>timeType</cell><cell>TIME_INTERVAL</cell></row><row><cell>timeZone</cell><cell>( UTC 1\:00 ) Central European Time(Europe/Berlin)</cell></row><row><cell>triggerType</cell><cell>cron</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>0+0/1+0-23+?+*+*+*&amp;trigger.timeZone\=Europe/Berlin</cell></row>
+Receiver_Directory=<Receiver Directory /in>
+Sender_Directoy=<Sender Directory /Concur>
+Receiver_UserName=<Receiver UserName>
+PGP_Signature=NoSignature
+Sender_Authentication=public_key
+Receiver_FileName=
+Receiver_Address=<Receiver SFTP Address>
+Sender_CredentialName=
+PGP_Compression\ Algorithm=ZLIB
+PGP_EncryptionUserID=
+Sender_FileName=
+Sender_PrivateKeyAlias=
+Sender_Address=<Sender Address>
+Receiver_ProxyType=none
+Sender_ArchiveDirectory=Verarbeitet
+Sender_MaxMessages=20
+Receiver_Authentication=public_key
+Sender_LockTimeout=15
+Receiver_HandlingExistingFiles=Override
+EnableLogging=true
+PGP_SecretKeyLength=128
+PGP_Algorithm=AES
+Receiver_PrivateKeyAlias=<Receiver PrivateKeyAlias>
+Sender_UseName=
+Sender_PostProcessing=move

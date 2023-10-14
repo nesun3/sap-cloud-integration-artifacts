@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: Pay_Frequency
+Bundle-ManifestVersion: 2
+Origin-Bundle-SymbolicName: Pay_Frequency
+Origin-Bundle-Version: 1.0.2
+Import-Package: com.sap.xi.mapping.camel.valmap
+Origin-Bundle-Name: Pay Frequency
+Bundle-Name: Pay Frequency
+Bundle-Version: 1.0.2
+Bundle-Activator: com.sap.xi.mapping.camel.valmap.ValueMappingActivato
+ r
+SAP-NodeType: IFLMAP
+Origin-ModifiedDate: 1692806430975
+SAP-BundleType: ValueMapping
+Import-Service: 
+

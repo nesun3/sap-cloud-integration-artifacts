@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Sat Oct 14 11:20:38 UTC 2023
+description=Send data to Third Party for delta changes create, update and delete via ODATA API
+source=SAPSuccessFactorsEmployeeCentral
+target=SAPS4HANACloud,ThirdParty

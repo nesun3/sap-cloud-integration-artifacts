@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: Phone_Country_Code_Conversion; singleton:=true
+Bundle-ManifestVersion: 2
+Origin-Bundle-SymbolicName: Phone_Country_Code_Conversion
+SAP-ArtifactTrait: 
+Origin-Bundle-Version: 1.0.2
+Import-Package: com.sap.xi.mapping.camel.valmap
+Origin-Bundle-Name: Phone Country Code
+Bundle-Name: Phone Country Code
+Bundle-Version: 1.0.2
+Bundle-Activator: com.sap.xi.mapping.camel.valmap.ValueMappingActivato
+ r
+SAP-NodeType: IFLMAP
+Origin-ModifiedDate: 1692519222463
+SAP-BundleType: ValueMapping
+Import-Service: 
+

@@ -1,0 +1,80 @@
+Manifest-Version: 1.0
+Bundle-Description: 
+Bundle-SymbolicName: SF_EC_to_Benefitfocus
+Origin-Bundle-SymbolicName: SF_EC_to_Benefitfocus
+Bundle-ManifestVersion: 2
+Origin-Bundle-Version: 1.3.4
+Import-Package:  com.sap.it.rt.adapter.sfsf.component, com.sap.it.rt.a
+ dapter.odata.destination, com.sap.it.rt.adapter.odata.auth, com.sap.g
+ ateway.core.ip.processor.odataprocessors, com.sap.gateway.core.ip.com
+ ponent.odata, com.sap.it.nm.security, com.sap.it.nm.concurrent, com.s
+ ap.esb.camel.route.policy, com.sap.esb.security.pgp;version="[1,2)", 
+ com.sap.esb.camel.security.pgp;version="[0,1)", org.springframework.j
+ dbc.datasource, com.sap.it.rt.xmltocsv.converter, org.mozilla.javascr
+ ipt, org.codehaus.groovy.reflection, org.codehaus.groovy.runtime.call
+ site, org.codehaus.groovy.runtime, org.codehaus.groovy.runtime.typeha
+ ndling,  groovy.lang, org.codehaus.groovy.jsr223, com.sap.gateway.ip.
+ core.customdev.util, com.sap.gateway.ip.core.customdev.logging, com.s
+ ap.gateway.ip.core.customdev.processor, com.sap.it.rt.camel.aggregate
+ .strategies, com.sap.aii.mapping.value.api, com.sap.esb.camel.message
+ .storage.api, com.sap.it.op.agent.trace, com.sap.esb.webservice.secur
+ ity.crypto.api, com.sap.esb.webservice.policy.alternative.selector, o
+ rg.apache.cxf.ws.security.wss4j, org.apache.ws.security.components.cr
+ ypto, javax.security.auth.callback, com.sap.esb.camel.jdbc.idempotenc
+ y.reorg, com.sap.it.iflow.model.runtime, com.sap.it.iflow.model, com.
+ sap.sod.utils.soap.processors, com.sap.esb.camel.jdbc.inprogress.repo
+ sitory, com.sap.esb.camel.jdbc.idempotency.repository, com.sap.esb.ca
+ mel.security.cms, org.apache.camel.processor.idempotent.jdbc, org.apa
+ che.camel.spi, com.sap.esb.camel.endpoint.configurator.api, com.sap.i
+ t.op.ed, com.sap.it.op.agent.ed.plugins.camel.api, com.sap.esb.webser
+ vice.authorization.supplier.api, org.apache.cxf.interceptor.security,
+  com.sap.esb.camel.mpl.access, com.sap.esb.camel.eip.splitter, net.sf
+ .saxon,com.sap.esb.application.services.cxf.interceptor,com.sap.esb.s
+ ecurity,com.sap.it.op.agent.api,com.sap.it.op.agent.collector.camel,c
+ om.sap.it.op.agent.collector.cxf,com.sap.it.op.agent.mpl,com.sap.sod.
+ utils.cxf.interceptors,com.sap.sod.utils.encoding.processors,com.sap.
+ sod.utils.idoc.soap,com.sap.sod.utils.soap,com.sap.sod.utils.idoc.soa
+ p.processors,javax.jms,javax.jws,javax.wsdl,javax.xml.bind.annotation
+ ,javax.xml.namespace,javax.xml.ws,org.apache.camel;version="2.8",org.
+ apache.camel.builder;version="2.8",org.apache.camel.builder.xml;versi
+ on="2.8",org.apache.camel.component.cxf,org.apache.camel.model;versio
+ n="2.8",org.apache.camel.processor;version="2.8",org.apache.camel.pro
+ cessor.aggregate;version="2.8",org.apache.camel.spring.spi;version="2
+ .8",org.apache.commons.logging,org.apache.cxf.binding,org.apache.cxf.
+ binding.soap,org.apache.cxf.binding.soap.spring,org.apache.cxf.bus,or
+ g.apache.cxf.bus.resource,org.apache.cxf.bus.spring,org.apache.cxf.bu
+ slifecycle,org.apache.cxf.catalog,org.apache.cxf.configuration.jsse,o
+ rg.apache.cxf.configuration.spring,org.apache.cxf.endpoint,org.apache
+ .cxf.headers,org.apache.cxf.interceptor,org.apache.cxf.management.cou
+ nters,org.apache.cxf.message,org.apache.cxf.phase,org.apache.cxf.reso
+ urce,org.apache.cxf.service.factory,org.apache.cxf.service.model,org.
+ apache.cxf.transport,org.apache.cxf.transport.common.gzip,org.apache.
+ cxf.transport.http,org.apache.cxf.transport.http.policy,org.apache.cx
+ f.workqueue,org.apache.cxf.ws.rm.persistence,org.apache.cxf.wsdl11,or
+ g.osgi.framework;version="1.6.0",org.osgi.service.blueprint;version="
+ [1.0.0,2.0.0)",org.slf4j;version="1.6",org.springframework.beans.fact
+ ory.config;version="3.0",com.sap.aii.ib.bom.flib.types,com.sap.aii.ma
+ pping.api,com.sap.aii.mappingtool.flib3,com.sap.aii.mappingtool.flib7
+ ,com.sap.aii.mappingtool.tf3,com.sap.aii.mappingtool.tf3.rt,com.sap.a
+ ii.mappingtool.tf7,com.sap.aii.mappingtool.tf7.rt,com.sap.aii.mapping
+ tool.tfapi,com.sap.esb.webservice.audit.log
+Origin-Bundle-Name: SF EC to Benefitfocus
+SAP-RuntimeProfile: iflmap
+Bundle-Name: SF EC to Benefitfocus
+Bundle-Version: 1.3.4
+Bundle-ClassPath: .,/mapping/ce_to_bf_2.jar,/mapping/Build_Paymax_Resp
+ onse.jar,/mapping/Build_Header.jar,/mapping/Copy_of_ce_to_bf_2.jar,/m
+ apping/Build_PayMax.jar,/mapping/ce_to_bf_2.jar,/mapping/Build_Paymax
+ _Response.jar,/mapping/Build_Header.jar,/lib/jaxen.jar,/lib/org.apach
+ e.servicemix.bundles.jdom-1.1_3.jar
+SAP-NodeType: IFLMAP
+Origin-ModifiedDate: 1692519222470
+Import-Service:  com.sap.esb.camel.security.cms.SignatureSplitter;mult
+ iple:=false, org.apache.cxf.ws.rm.persistence.RMStore;multiple:=false
+ , javax.sql.DataSource;multiple:=false;filter="(dataSourceName=defaul
+ t)", com.sap.esb.security.TrustManagerFactory;multiple:=false,  com.s
+ ap.esb.security.KeyManagerFactory;multiple:=false, com.sap.esb.camel.
+ endpoint.configurator.api.EndpointConfigurator;multiple:=false;filter
+ ="(endpointType=SFTP)",com.sap.esb.webservice.audit.log.AuditLogger 
+SAP-BundleType: IntegrationFlow
+

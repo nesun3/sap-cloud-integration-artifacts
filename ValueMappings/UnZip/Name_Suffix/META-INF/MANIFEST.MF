@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: Name_Suffix
+Bundle-ManifestVersion: 2
+Origin-Bundle-SymbolicName: Name_Suffix
+Origin-Bundle-Version: 1.0.1
+Import-Package: com.sap.xi.mapping.camel.valmap
+Origin-Bundle-Name: Name Suffix
+Bundle-Name: Name Suffix
+Bundle-Version: 1.0.1
+Bundle-Activator: com.sap.xi.mapping.camel.valmap.ValueMappingActivato
+ r
+SAP-NodeType: IFLMAP
+Origin-ModifiedDate: 1692519222448
+SAP-BundleType: ValueMapping
+Import-Service: 
+

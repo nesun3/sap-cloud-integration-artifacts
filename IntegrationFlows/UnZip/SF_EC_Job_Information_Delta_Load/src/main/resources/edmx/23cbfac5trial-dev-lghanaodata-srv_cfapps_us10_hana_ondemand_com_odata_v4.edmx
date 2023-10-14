@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+  <edmx:DataServices>
+    <Schema Namespace="OdataService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityContainer Name="EntityContainer">
+        <EntitySet Name="PickListV2" EntityType="OdataService.PickListV2"/>
+        <EntitySet Name="PickListValueV2" EntityType="OdataService.PickListValueV2"/>
+        <EntitySet Name="cust_EmploymentType" EntityType="OdataService.cust_EmploymentType"/>
+        <EntitySet Name="cust_JobGroup" EntityType="OdataService.cust_JobGroup"/>
+        <EntitySet Name="FOJobCode" EntityType="OdataService.FOJobCode"/>
+        <EntitySet Name="FOJobFunction" EntityType="OdataService.FOJobFunction"/>
+        <EntitySet Name="cust_JobTitle" EntityType="OdataService.cust_JobTitle"/>
+        <EntitySet Name="cust_JobGrade" EntityType="OdataService.cust_JobGrade"/>
+        <EntitySet Name="cust_SupervisorLevel" EntityType="OdataService.cust_SupervisorLevel"/>
+        <EntitySet Name="cust_WorkSite" EntityType="OdataService.cust_WorkSite"/>
+        <EntitySet Name="cust_employeegroup" EntityType="OdataService.cust_employeegroup"/>
+        <EntitySet Name="FODepartment" EntityType="OdataService.FODepartment"/>
+        <EntitySet Name="Position" EntityType="OdataService.Position"/>
+        <EntitySet Name="EmpJob" EntityType="OdataService.EmpJob"/>
+        <EntitySet Name="cust_Exceptions" EntityType="OdataService.cust_Exceptions"/>
+        <EntitySet Name="Photo" EntityType="OdataService.Photo"/>
+        <ActionImport Name="SavePickListV2MultiProc" Action="OdataService.SavePickListV2MultiProc"/>
+        <ActionImport Name="DeletePickListV2Proc" Action="OdataService.DeletePickListV2Proc"/>
+        <ActionImport Name="SavePickListValueV2MultiProc" Action="OdataService.SavePickListValueV2MultiProc"/>
+        <ActionImport Name="DeletePickListValueV2Proc" Action="OdataService.DeletePickListValueV2Proc"/>
+        <ActionImport Name="SaveCust_EmploymentTypeMultiProc" Action="OdataService.SaveCust_EmploymentTypeMultiProc"/>
+        <ActionImport Name="DeleteCust_EmploymentTypeProc" Action="OdataService.DeleteCust_EmploymentTypeProc"/>
+        <ActionImport Name="SaveCust_JobGroupMultiProc" Action="OdataService.SaveCust_JobGroupMultiProc"/>
+        <ActionImport Name="DeleteCust_JobGroupProc" Action="OdataService.DeleteCust_JobGroupProc"/>
+        <ActionImport Name="SaveFOJobFunctionMultiProc" Action="OdataService.SaveFOJobFunctionMultiProc"/>
+        <ActionImport Name="DeleteFOJobFunctionProc" Action="OdataService.DeleteFOJobFunctionProc"/>
+        <ActionImport Name="SaveFOJobCodeMultiProc" Action="OdataService.SaveFOJobCodeMultiProc"/>
+        <ActionImport Name="DeleteFOJobCodeProc" Action="OdataService.DeleteFOJobCodeProc"/>
+        <ActionImport Name="SaveCust_JobTitleMultiProc" Action="OdataService.SaveCust_JobTitleMultiProc"/>
+        <ActionImport Name="DeleteCust_JobTitleProc" Action="OdataService.DeleteCust_JobTitleProc"/>
+        <ActionImport Name="SaveCust_JobGradeMultiProc" Action="OdataService.SaveCust_JobGradeMultiProc"/>
+        <ActionImport Name="DeleteCust_JobGradeProc" Action="OdataService.DeleteCust_JobGradeProc"/>
+        <ActionImport Name="SaveCust_SupervisorLevelMultiProc" Action="OdataService.SaveCust_SupervisorLevelMultiProc"/>
+        <ActionImport Name="DeleteCust_SupervisorLevelProc" Action="OdataService.DeleteCust_SupervisorLevelProc"/>
+        <ActionImport Name="SaveCust_WorkSiteMultiProc" Action="OdataService.SaveCust_WorkSiteMultiProc"/>
+        <ActionImport Name="DeleteCust_WorkSiteProc" Action="OdataService.DeleteCust_WorkSiteProc"/>
+        <ActionImport Name="SaveCust_employeegroupMultiProc" Action="OdataService.SaveCust_employeegroupMultiProc"/>
+        <ActionImport Name="DeleteCust_employeegroupProc" Action="OdataService.DeleteCust_employeegroupProc"/>
+        <ActionImport Name="SaveFODepartmentMultiProc" Action="OdataService.SaveFODepartmentMultiProc"/>
+        <ActionImport Name="DeleteFODepartmentProc" Action="OdataService.DeleteFODepartmentProc"/>
+        <ActionImport Name="SavePositionMultiProc" Action="OdataService.SavePositionMultiProc"/>
+        <ActionImport Name="DeletePositionProc" Action="OdataService.DeletePositionProc"/>
+        <ActionImport Name="SaveEmpJobMultiProc" Action="OdataService.SaveEmpJobMultiProc"/>
+        <ActionImport Name="DeleteEmpJobProc" Action="OdataService.DeleteEmpJobProc"/>
+        <ActionImport Name="SaveCust_ExceptionsMultiProc" Action="OdataService.SaveCust_ExceptionsMultiProc"/>
+        <ActionImport Name="DeleteCust_ExceptionsProc" Action="OdataService.DeleteCust_ExceptionsProc"/>
+        <ActionImport Name="SavePhotoMultiProc" Action="OdataService.SavePhotoMultiProc"/>
+        <ActionImport Name="DeletePhotoProc" Action="OdataService.DeletePhotoProc"/>
+      </EntityContainer>
+      <EntityType Name="PickListV2">
+        <Key>
+          <PropertyRef Name="mdfSystemRecordId"/>
+        </Key>
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="picklistId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="PickListValueV2">
+        <Key>
+          <PropertyRef Name="mdfSystemRecordId"/>
+        </Key>
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="picklistId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="cust_EmploymentType">
+        <Key>
+          <PropertyRef Name="mdfSystemRecordId"/>
+        </Key>
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="cust_JobGroup">
+        <Key>
+          <PropertyRef Name="mdfSystemRecordId"/>
+        </Key>
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="FOJobCode">
+        <Key>
+          <PropertyRef Name="cust_integrationKey"/>
+          <PropertyRef Name="startDate"/>
+          <PropertyRef Name="externalCode"/>
+        </Key>
+        <Property Name="cust_integrationKey" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="startDate" Type="Edm.String" MaxLength="25" Nullable="false"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="FOJobFunction">
+        <Key>
+          <PropertyRef Name="cust_integrationKey"/>
+        </Key>
+        <Property Name="cust_integrationKey" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="cust_JobTitle">
+        <Key>
+          <PropertyRef Name="mdfSystemRecordId"/>
+        </Key>
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="cust_JobGrade">
+        <Key>
+          <PropertyRef Name="mdfSystemRecordId"/>
+        </Key>
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="cust_SupervisorLevel">
+        <Key>
+          <PropertyRef Name="mdfSystemRecordId"/>
+        </Key>
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="cust_WorkSite">
+        <Key>
+          <PropertyRef Name="mdfSystemRecordId"/>
+        </Key>
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="WorkSiteID" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="cust_employeegroup">
+        <Key>
+          <PropertyRef Name="mdfSystemRecordId"/>
+        </Key>
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="FODepartment">
+        <Key>
+          <PropertyRef Name="cust_seq"/>
+        </Key>
+        <Property Name="cust_seq" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="20"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="Position">
+        <Key>
+          <PropertyRef Name="mdfSystemRecordId"/>
+        </Key>
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="code" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="EmpJob">
+        <Key>
+          <PropertyRef Name="userId"/>
+          <PropertyRef Name="startDate"/>
+          <PropertyRef Name="seqNumber"/>
+          <PropertyRef Name="uniquekey"/>
+        </Key>
+        <Property Name="userId" Type="Edm.String" MaxLength="20" Nullable="false"/>
+        <Property Name="startDate" Type="Edm.String" MaxLength="25" Nullable="false"/>
+        <Property Name="seqNumber" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="uniquekey" Type="Edm.Int64" Nullable="false"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="cust_Exceptions">
+        <Key>
+          <PropertyRef Name="userId"/>
+          <PropertyRef Name="startDate"/>
+          <PropertyRef Name="company"/>
+        </Key>
+        <Property Name="userId" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="startDate" Type="Edm.String" MaxLength="25" Nullable="false"/>
+        <Property Name="company" Type="Edm.String" MaxLength="25" Nullable="false"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <EntityType Name="Photo">
+        <Key>
+          <PropertyRef Name="photoId"/>
+        </Key>
+        <Property Name="photoId" Type="Edm.String" MaxLength="128" Nullable="false"/>
+        <Property Name="userId" Type="Edm.String" MaxLength="100"/>
+        <Property Name="photoType" Type="Edm.Int64"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+        <Property Name="createdBy" Type="Edm.String"/>
+        <Property Name="lastModifiedBy" Type="Edm.String"/>
+        <Property Name="createdDateTime" Type="Edm.DateTimeOffset"/>
+        <Property Name="lastModifiedDateTime" Type="Edm.DateTimeOffset"/>
+      </EntityType>
+      <ComplexType Name="PickListV2Headers">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="picklistId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="PickListV2HeadersOutput">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="picklistId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="PickListValueV2Headers">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="picklistId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="PickListValueV2HeadersOutput">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="picklistId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="cust_EmploymentTypeHeaders">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="cust_EmploymentTypeHeadersOutput">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="cust_JobGroupHeaders">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="cust_JobGroupHeadersOutput">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="FOJobFunctionHeaders">
+        <Property Name="cust_integrationKey" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="20"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="FOJobFunctionHeadersOutput">
+        <Property Name="cust_integrationKey" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="20"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="FOJobCodeHeaders">
+        <Property Name="cust_integrationKey" Type="Edm.String" MaxLength="128"/>
+        <Property Name="startDate" Type="Edm.String" MaxLength="25"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="20"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="FOJobCodeHeadersOutput">
+        <Property Name="cust_integrationKey" Type="Edm.String" MaxLength="128"/>
+        <Property Name="startDate" Type="Edm.String" MaxLength="25"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="20"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="cust_JobTitleHeaders">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="cust_JobTitleHeadersOutput">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="cust_JobGradeHeaders">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="cust_JobGradeHeadersOutput">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="cust_SupervisorLevelHeaders">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="cust_SupervisorLevelHeadersOutput">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="cust_WorkSiteHeaders">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="WorkSiteID" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="cust_WorkSiteHeadersOutput">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="WorkSiteID" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="cust_employeegroupHeaders">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="cust_employeegroupHeadersOutput">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="FODepartmentHeaders">
+        <Property Name="cust_seq" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="20"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="FODepartmentHeadersOutput">
+        <Property Name="cust_seq" Type="Edm.String" MaxLength="128"/>
+        <Property Name="externalCode" Type="Edm.String" MaxLength="20"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="uniquekey" Type="Edm.Int64"/>
+      </ComplexType>
+      <ComplexType Name="PositionHeaders">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="code" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="PositionHeadersOutput">
+        <Property Name="mdfSystemRecordId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="code" Type="Edm.String" MaxLength="128"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="EmpJobHeaders">
+        <Property Name="userId" Type="Edm.String" MaxLength="20"/>
+        <Property Name="startDate" Type="Edm.String" MaxLength="25"/>
+        <Property Name="seqNumber" Type="Edm.String" MaxLength="2"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="EmpJobHeadersOutput">
+        <Property Name="userId" Type="Edm.String" MaxLength="20"/>
+        <Property Name="startDate" Type="Edm.String" MaxLength="25"/>
+        <Property Name="seqNumber" Type="Edm.String" MaxLength="2"/>
+        <Property Name="uniquekey" Type="Edm.Int64"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="cust_ExceptionsHeaders">
+        <Property Name="userId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="startDate" Type="Edm.String" MaxLength="25"/>
+        <Property Name="company" Type="Edm.String" MaxLength="25"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="cust_ExceptionsHeadersOutput">
+        <Property Name="userId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="startDate" Type="Edm.String" MaxLength="25"/>
+        <Property Name="company" Type="Edm.String" MaxLength="25"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <ComplexType Name="PhotoHeaders">
+        <Property Name="photoId" Type="Edm.String" MaxLength="128"/>
+        <Property Name="userId" Type="Edm.String" MaxLength="100"/>
+        <Property Name="photoType" Type="Edm.Int64"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="Record" Type="Edm.String"/>
+      </ComplexType>
+      <ComplexType Name="PhotoHeadersOutput">
+        <Property Name="userId" Type="Edm.String" MaxLength="100"/>
+        <Property Name="photoType" Type="Edm.Int64"/>
+        <Property Name="cudKey" Type="Edm.String" MaxLength="1"/>
+      </ComplexType>
+      <Action Name="SavePickListV2MultiProc" IsBound="false">
+        <Parameter Name="PickListV2" Type="Collection(OdataService.PickListV2Headers)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.PickListV2HeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeletePickListV2Proc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SavePickListValueV2MultiProc" IsBound="false">
+        <Parameter Name="PickListValueV2" Type="Collection(OdataService.PickListValueV2Headers)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.PickListValueV2HeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeletePickListValueV2Proc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SaveCust_EmploymentTypeMultiProc" IsBound="false">
+        <Parameter Name="cust_EmploymentType" Type="Collection(OdataService.cust_EmploymentTypeHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.cust_EmploymentTypeHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeleteCust_EmploymentTypeProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SaveCust_JobGroupMultiProc" IsBound="false">
+        <Parameter Name="cust_JobGroup" Type="Collection(OdataService.cust_JobGroupHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.cust_JobGroupHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeleteCust_JobGroupProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SaveFOJobFunctionMultiProc" IsBound="false">
+        <Parameter Name="FOJobFunction" Type="Collection(OdataService.FOJobFunctionHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.FOJobFunctionHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeleteFOJobFunctionProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SaveFOJobCodeMultiProc" IsBound="false">
+        <Parameter Name="FOJobCode" Type="Collection(OdataService.FOJobCodeHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.FOJobCodeHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeleteFOJobCodeProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SaveCust_JobTitleMultiProc" IsBound="false">
+        <Parameter Name="cust_JobTitle" Type="Collection(OdataService.cust_JobTitleHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.cust_JobTitleHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeleteCust_JobTitleProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SaveCust_JobGradeMultiProc" IsBound="false">
+        <Parameter Name="cust_JobGrade" Type="Collection(OdataService.cust_JobGradeHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.cust_JobGradeHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeleteCust_JobGradeProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SaveCust_SupervisorLevelMultiProc" IsBound="false">
+        <Parameter Name="cust_SupervisorLevel" Type="Collection(OdataService.cust_SupervisorLevelHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.cust_SupervisorLevelHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeleteCust_SupervisorLevelProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SaveCust_WorkSiteMultiProc" IsBound="false">
+        <Parameter Name="cust_WorkSite" Type="Collection(OdataService.cust_WorkSiteHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.cust_WorkSiteHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeleteCust_WorkSiteProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SaveCust_employeegroupMultiProc" IsBound="false">
+        <Parameter Name="cust_employeegroup" Type="Collection(OdataService.cust_employeegroupHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.cust_employeegroupHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeleteCust_employeegroupProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SaveFODepartmentMultiProc" IsBound="false">
+        <Parameter Name="FODepartment" Type="Collection(OdataService.FODepartmentHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.FODepartmentHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeleteFODepartmentProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SavePositionMultiProc" IsBound="false">
+        <Parameter Name="Position" Type="Collection(OdataService.PositionHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.PositionHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeletePositionProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SaveEmpJobMultiProc" IsBound="false">
+        <Parameter Name="EmpJob" Type="Collection(OdataService.EmpJobHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.EmpJobHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeleteEmpJobProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SaveCust_ExceptionsMultiProc" IsBound="false">
+        <Parameter Name="cust_Exceptions" Type="Collection(OdataService.cust_ExceptionsHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.cust_ExceptionsHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeleteCust_ExceptionsProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+      <Action Name="SavePhotoMultiProc" IsBound="false">
+        <Parameter Name="Photo" Type="Collection(OdataService.PhotoHeaders)" Nullable="false"/>
+        <ReturnType Type="Collection(OdataService.PhotoHeadersOutput)" Nullable="false"/>
+      </Action>
+      <Action Name="DeletePhotoProc" IsBound="false">
+        <ReturnType Type="Edm.Boolean"/>
+      </Action>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

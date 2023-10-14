@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="queryPaymaxResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" name="paymax">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SocialSecurityNumber" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:length value="9" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="LastName" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="FirstName" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="MiddleName" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Suffix" minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="10" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="AddressLine1" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="AddressLine2" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="City" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="State" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:length value="2" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="ZipCode" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="10" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CountryCode" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:length value="3" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="NameChangeDate" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="DateofBirth" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Gender" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:length value="1" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="MaritalStatus" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="10" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Ethnicity" minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="20" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="HomePhone" minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{0,10}" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CellPhone" minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{0,10}" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="PersonalE-mail" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EmergencyContactName" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EmergencyContactRelationship"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="20" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EmergencyContactPhone" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{0,10}" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EmergencyContactAlternatePhone"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{0,10}" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EmergencyContactAddressLine1"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EmergencyContactAddressLine2"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EmergencyContactCity" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EmergencyContactState" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="2" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EmergencyContactZipCode" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="10" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EmergencyContactCountryCode"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="3" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="DateofHire" minOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="AdjustedServiceDate" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="AcquisitionDate" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="TerminationDate" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="TerminationReason" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="1" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="RetiredIndicator" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="1" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Salary" minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{0,11}(.00)" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EarningUnitofMeasure" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="20" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="PayFrequency" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="15" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EarningAmountEffectiveDate"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="SalaryOverrideAmount" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{0,11}" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="SalaryOverrideEarningUnitofMeasure"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="20" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="SalaryOverrideAmountEffectiveDate"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EEOC" minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Occupation" minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="EmployeeID" minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="19" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="WorkPhone" minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{0,10}" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="WorkCellPhone" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{0,10}" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="WorkPager" minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{0,10}" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="WorkEmail" minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="ScheduledWorkHours" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="5" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryEffectiveDate"
+								minOccurs="0" maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType1" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue1" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType2" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue2" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType3" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue3" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType4" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue4" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType5" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue5" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType6" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue6" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType7" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue7" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType8" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue8" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType9" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue9" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType10" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue10" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType11" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue11" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType12" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue12" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType13" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue13" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType14" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue14" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryType15" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="50" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomCategoryValue15" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

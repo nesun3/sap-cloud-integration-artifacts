@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Sat Oct 14 11:21:08 UTC 2023
+description=Sends employee details from SuccessFactors Employee Central to Third Party Benefits vendor \: Benefitfocus
+source=SAPSuccessFactorsEmployeeCentral
+target=Benefitfocus

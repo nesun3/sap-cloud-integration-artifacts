@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Sat Oct 14 11:21:21 UTC 2023
+description=This IFlow takes employee master data CSV files from the SAP SuccessFactors SFTP, transforms, pgb encrypts and sends them to the SAP Concur SFTP Server.
+source=SAPSuccessFactors
+target=SAPConcur

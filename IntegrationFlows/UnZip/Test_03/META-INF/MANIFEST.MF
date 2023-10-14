@@ -32,7 +32,7 @@ Import-Package: com.sap.esb.application.services.cxf.interceptor,com.s
 Origin-Bundle-Name: Test 03
 SAP-RuntimeProfile: iflmap
 Bundle-Name: Test 03
-Bundle-Version: 1.0.9
+Bundle-Version: 1.0.10
 SAP-NodeType: IFLMAP
 Origin-ModifiedDate: 1693463662558
 SAP-BundleType: IntegrationFlow

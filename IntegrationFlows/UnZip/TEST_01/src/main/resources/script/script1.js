@@ -15,12 +15,12 @@ function processData(message) {
     var headers = message.getHeaders();
     var value = headers.get("oldHeader");
     message.setHeader("oldHeader", value + " modified");
-    message.setHeader("newHeader", "newHeader");
+    message.setHeader("newHeader", "newHeader-v2");
     //Properties
     var properties = message.getProperties();
     value = properties.get("oldProperty");
     message.setProperty("oldProperty", value + " modified");
-    message.setProperty("newProperty", "newProperty");
+    message.setProperty("newProperty", "newProperty-v2");
     console.log("Aloha! to JS");
     return message;
 }

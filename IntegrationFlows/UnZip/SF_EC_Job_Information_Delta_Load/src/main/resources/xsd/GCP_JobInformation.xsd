@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Record">
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element name="serviceId" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+				<xs:element name="data" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+
+
+<xs:element name="sfUserId" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="asgDate" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="asgEndDate" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="asgRsnCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="asgSeq" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="asgType" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="careerLevel" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="compCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="contractEndDate" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="cudKey" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="deptCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="employeeGroup" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="empNo" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="empStatCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="empType" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="fseYn" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="gaEndDate" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="gaPlannedEndDate" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="gaStartDate" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="gaCompany" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="groupJobTitle" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="hireType" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="hrBizplcCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="hrOrgCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="jobCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="jobGradeCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="jobGradeSeniority" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="jobGradeStrt" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="jobGrpCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="jobSrsCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="jobTitleCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="lctnCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="managerSfUserId" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="nationalCoreTech" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="payGrade" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="payScaleArea" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="payScaleGroup" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="payScaleLevel" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="payScaleType" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="positionCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="prbtnrYn" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="profileType" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="recType" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="repCompCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="secondPosition" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="sfKeyId1" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="sfPersonId" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="sfPositionCd" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="sfPositionEntryDate" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="timeZone" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="workSite" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="dispatchYn" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="attr2" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="attr3" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="sfKeyId2" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="sfKeyId3" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="contractDate" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="customString8" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="customString35" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+<xs:element name="customString31" minOccurs="0"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="128"/></xs:restriction></xs:simpleType></xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
